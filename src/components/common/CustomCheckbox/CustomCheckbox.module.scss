@@ -1,0 +1,40 @@
+.customCheckbox {
+  position: relative;
+  padding-left: 23px;
+  font-size: 12px;
+  line-height: 20px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkboxInput {
+  display: none;
+
+  &:checked + .checkmark {
+    background-color: #000;
+
+    .customIcon {
+      display: block;
+    }
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  transform: translateY(-50%);
+}
+
+.customIcon {
+  display: none;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  font-size: 5px;
+  color: #fff;
+}

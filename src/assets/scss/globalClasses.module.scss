@@ -1,0 +1,45 @@
+.icon_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  border: 1px solid #3f3f3f;
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+
+  i {
+    font-size: 15px;
+    color: #000;
+    transition: 0.2s;
+  }
+
+  &:hover, &:active {
+    border-color: #000;
+    background-color: #000;
+
+    i {
+      color: #fff;
+    }
+  }
+}
+
+.button {
+  display: block;
+  min-width: 214px;
+  height: 54px;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 40px;
+  background-color: #000;
+  font-size: 16px;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}

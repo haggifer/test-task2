@@ -1,0 +1,44 @@
+// Colors:
+@value accentColor: #143286;
+
+@value accentColorLight1: #14328633;
+
+@value accentColorLight2: #14328666;
+
+@value accentColorLight3: #143286aa;
+
+// Sizes:
+@value headerHeightDesktop: 112px;
+
+@value headerHeightMobile: 80px;
+
+@value maxContentWidth: 1240px;
+
+@value pageSidePaddingDesktop: 30px;
+
+@value pageSidePaddingMobile: 20px;
+
+// Breakpoints:
+@value bp-sm: 600px;
+
+@value bp-md: 900px;
+
+@value bp-lg: 1200px;
+
+@value bp-up-sm: (min-width: bp-sm);
+
+@value bp-up-md: (min-width: bp-md);
+
+@value bp-up-lg: (min-width: bp-lg);
+
+@value bp-down-sm: (max-width: bp-sm);
+
+@value bp-down-md: (max-width: bp-md);
+
+@value bp-down-lg: (max-width: bp-lg);
+
+@value bp-only-sm: (min-width: bp-sm) and (max-width: bp-md);
+
+@value bp-only-md: (min-width: bp-md) and (max-width: bp-lg);
+
+@value bp-between-sm-lg: (min-width: bp-sm) and (max-width: bp-lg);
