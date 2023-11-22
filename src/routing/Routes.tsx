@@ -6,6 +6,7 @@ import { serviceRoutes } from "./routes/serviceRoutes";
 export default function Routes(): ReactElement {
   const routes = useRoutes([
     ...publicRoutes,
+    ...serviceRoutes,
   ])
 
   return (

@@ -2,9 +2,8 @@ import { RouteObject } from "react-router-dom";
 import React from "react";
 import PageLayout from "../../components/layout/PageLayout/PageLayout";
 import Contact from "../../pages/public/Contact/Contact";
-import { serviceRoutes } from "./serviceRoutes";
 
-export const defaultPublicPath = '/pokemon';
+export const defaultPublicPath = '/contact';
 
 export const publicRoutes: RouteObject[] = [
   {
@@ -24,7 +23,6 @@ export const publicRoutes: RouteObject[] = [
           <Contact/>
         ),
       },
-      ...serviceRoutes,
     ],
   },
 ]

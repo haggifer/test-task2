@@ -21,14 +21,14 @@ export default function NotFound(): ReactElement {
         <h2 className={classes.message}>Page not found!</h2>
 
         <div className={classes.buttons}>
-          {/*<Button*/}
-          {/*  variant="outlined"*/}
-          {/*  onClick={goPrevPage}*/}
-          {/*>Go Back</Button>*/}
-          {/*<Button*/}
-          {/*  variant="outlined"*/}
-          {/*  onClick={goHome}*/}
-          {/*>Go Home</Button>*/}
+          <button
+            className={classes.button}
+            onClick={goPrevPage}
+          >Go Back</button>
+          <button
+            className={classes.button}
+            onClick={goHome}
+          >Go Home</button>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,26 @@
 }
 
 .buttons {
+  display: flex;
+
   > *:not(:first-child) {
     margin-left: 10px;
+  }
+}
+
+.button {
+  border: 1px solid #3333aa;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: #ffffff;
+  color: #3333aa;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: #3333aa;
+    color: #ffffff;
   }
 }
