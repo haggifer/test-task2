@@ -90,7 +90,7 @@ export default function Footer(): ReactElement {
               <button type="submit" className={globalClasses.button}>Subscribe</button>
             </div>
 
-            <p>*  Will send you weekly updates for your better tool management.</p>
+            <p>* Will send you weekly updates for your better tool management.</p>
           </div>
         </div>
       </footer>

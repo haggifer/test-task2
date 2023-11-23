@@ -5,7 +5,6 @@ import classNames from "classnames";
 import CustomCheckbox from "../../../components/common/CustomCheckbox/CustomCheckbox";
 import CenteredContent from "../../../components/layout/CenteredContent/CenteredContent";
 import { useFormik } from "formik";
-import { useAppDispatch } from "../../../redux/hooks";
 import * as yup from 'yup'
 import { useBreakpoints } from "../../../utils/hooks/useBreapoints";
 
@@ -30,8 +29,7 @@ export default function ContactForm(): ReactElement {
     message: '',
   })
 
-  const validationSchema = yup.object({
-  })
+  const validationSchema = yup.object({})
 
   const processSubmit = async () => {
     console.log('submitted values:')
@@ -74,7 +72,8 @@ export default function ContactForm(): ReactElement {
               <span>
                 <i className="icon-place"/>
               </span>
-              <a href="https://maps.app.goo.gl/P4qWCXovwD63z8us6">132 Dartmouth Street Boston,<br/> Massachusetts 02156 United States</a>
+              <a href="https://maps.app.goo.gl/P4qWCXovwD63z8us6">132 Dartmouth Street Boston,<br/> Massachusetts 02156
+                United States</a>
             </div>
           </div>
 
