@@ -2,13 +2,11 @@ import React, { ReactElement } from 'react';
 import classes from './Footer.module.scss'
 import CenteredContent from "../CenteredContent/CenteredContent";
 import classNames from "classnames";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useBreakpoints } from "../../../utils/hooks/useBreapoints";
 import globalClasses from "../../../assets/scss/globalClasses.module.scss";
 
 export default function Footer(): ReactElement {
-  const location = useLocation()
-
   const breakpoints = useBreakpoints()
 
   return (
