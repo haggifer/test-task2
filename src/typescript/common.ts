@@ -1,10 +1,10 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface ISelectOption<ValueType> {
-  label: string,
-  value: ValueType,
+  label: string;
+  value: ValueType;
 }
 
 export interface WithChildren {
-  children: ReactNode,
+  children: ReactNode;
 }

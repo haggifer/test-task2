@@ -1,24 +1,22 @@
-import React, { ChangeEvent, ReactElement } from "react";
+import React, { ChangeEvent, ReactElement } from 'react';
 import styles from './CustomCheckbox.module.scss';
-import classNames from "classnames";
+import classNames from 'classnames';
 
 interface IProps {
-  label?: string,
-  name?: string,
-  value?: boolean | string,
-  onChange?: (e: ChangeEvent) => void,
-  radio?: boolean,
+  label?: string;
+  name?: string;
+  value?: boolean | string;
+  onChange?: (e: ChangeEvent) => void;
+  radio?: boolean;
 }
 
-export default function CustomCheckbox(
-  {
-    label,
-    name,
-    value,
-    onChange,
-    radio,
-  }: IProps
-): ReactElement {
+export default function CustomCheckbox({
+  label,
+  name,
+  value,
+  onChange,
+  radio,
+}: IProps): ReactElement {
   return (
     <label className={styles.customCheckbox}>
       <input
@@ -30,12 +28,9 @@ export default function CustomCheckbox(
         onChange={onChange}
       />
       <span className={styles.checkmark}>
-        <i className={classNames(
-          'icon-check',
-          styles.customIcon
-        )}/>
+        <i className={classNames('icon-check', styles.customIcon)} />
       </span>
       {label}
     </label>
-  )
+  );
 }

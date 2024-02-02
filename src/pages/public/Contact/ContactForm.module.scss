@@ -14,7 +14,7 @@
   box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.04);
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 1px;
     right: 140px;
@@ -217,7 +217,8 @@
     color: #fff;
   }
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     border-color: #fff;
     background-color: #fff;
 
@@ -249,7 +250,8 @@
     transition: 0.2s;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #8d8d8d;

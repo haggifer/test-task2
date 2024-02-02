@@ -1,18 +1,18 @@
-import { useNavigate } from "react-router-dom";
-import React, { ReactElement } from "react";
-import classes from './NotFound.module.scss'
-import { defaultPublicPath } from "../../../routing/routes/publicRoutes";
+import { useNavigate } from 'react-router-dom';
+import React, { ReactElement } from 'react';
+import classes from './NotFound.module.scss';
+import { defaultPublicPath } from '../../../routing/routes/publicRoutes';
 
 export default function NotFound(): ReactElement {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const goPrevPage = () => {
-    navigate(-1)
-  }
+    navigate(-1);
+  };
 
   const goHome = () => {
-    navigate(defaultPublicPath)
-  }
+    navigate(defaultPublicPath);
+  };
 
   return (
     <div className={classes.wrapper}>
@@ -21,18 +21,14 @@ export default function NotFound(): ReactElement {
         <h2 className={classes.message}>Page not found!</h2>
 
         <div className={classes.buttons}>
-          <button
-            className={classes.button}
-            onClick={goPrevPage}
-          >Go Back
+          <button className={classes.button} onClick={goPrevPage}>
+            Go Back
           </button>
-          <button
-            className={classes.button}
-            onClick={goHome}
-          >Go Home
+          <button className={classes.button} onClick={goHome}>
+            Go Home
           </button>
         </div>
       </div>
     </div>
-  )
+  );
 }

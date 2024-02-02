@@ -1,12 +1,12 @@
 export interface INavLink {
-  name: string,
-  title: string,
-  href: string,
+  name: string;
+  title: string;
+  href: string;
   children?: {
-    name: string,
-    title: string,
-    href: string,
-  }[],
+    name: string;
+    title: string;
+    href: string;
+  }[];
 }
 
 export const navLinks: INavLink[] = [
@@ -35,7 +35,7 @@ export const navLinks: INavLink[] = [
         title: 'feature 3',
         href: '/features/feature3',
       },
-    ]
+    ],
   },
   {
     name: 'blog',
@@ -57,4 +57,4 @@ export const navLinks: INavLink[] = [
     title: 'contact',
     href: '/contact',
   },
-]
+];

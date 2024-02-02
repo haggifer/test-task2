@@ -25,7 +25,8 @@
     .nav_mobile_icon {
       margin-right: 4px;
 
-      &:before, &:after {
+      &:before,
+      &:after {
         width: 100%;
         border-radius: 1px;
         background-color: #fff;
@@ -139,7 +140,8 @@
     transition: 0.2s;
   }
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     &:after {
       height: 2px;
       background: #1f1f1f;
@@ -213,17 +215,23 @@
     display: none;
   }
 
-  &, &:before, &:after, > span {
+  &,
+  &:before,
+  &:after,
+  > span {
     transition: 0.2s;
   }
 
-  &:before, &:after, > span {
+  &:before,
+  &:after,
+  > span {
     height: 2px;
     border-radius: 1px 0 0 1px;
     background-color: #000;
   }
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: '';
     position: absolute;
   }
@@ -315,7 +323,8 @@
     color: #fff;
   }
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     border-color: #fff;
     background-color: #fff;
 
