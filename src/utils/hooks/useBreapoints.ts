@@ -1,5 +1,4 @@
-import { useMemo, useState } from 'react';
-import { useEffectOnce } from './useEffectOnce';
+import { useEffect, useMemo, useState } from 'react';
 
 export type IGetBreakpointsParams = Record<string, number>;
 
@@ -16,8 +15,12 @@ export const useBreakpoints = () => {
     setWindowWidth((e.target as Window).innerWidth);
   };
 
-  useEffectOnce(() => {
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   });
 
   return useMemo(() => {
